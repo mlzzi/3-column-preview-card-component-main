@@ -69,17 +69,33 @@ a {
   margin: 35px 50px 0 50px;
 }
 
+.button-sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  width: 148px;
+  height: 48px;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
 .button-suvs {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 95%);
-  color: hsl(179, 100%, 13%);
+  color: hsl(184, 100%, 22%);
   width: 150px;
   height: 50px;
   border-radius: 25px;
   text-decoration: none;
   margin: 35px 50px 0 50px;
+}
+
+.button-suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  width: 148px;
+  height: 48px;
+  border: 2px solid hsl(0, 0%, 95%);
 }
 
 .button-luxury {
@@ -95,8 +111,57 @@ a {
   margin: 35px 50px 0 50px;
 }
 
+.button-luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  width: 148px;
+  height: 48px;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
 .attribution {
   text-align: center;
   font-family: 'Lexend Deca',sans-serif;
   font-weight: 400;
+  margin-top: -20px;
+}
+
+@media(max-width: 768px) {
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+  }
+
+  .sedans {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .luxury {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .button-sedans {
+    margin: 0 50px 50px 50px;
+  }
+
+  .button-suvs {
+    margin: 0 50px 50px 50px;
+  }
+
+  .button-luxury {
+    margin: 0 50px 50px 50px;
+  }
+
+
+  p {
+    margin: 0 50px 30px 50px;
+  }
+
+  .attribution {
+    margin-top: 860px;
+    margin-bottom: 20px;
+  }
+
 }
