@@ -1,12 +1,13 @@
 body {
   font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .container {
   display: flex;
   max-width: 920px;
   height: 496px;
-  margin: 200px auto;
+  margin: 170px auto;
 }
 
 img {
